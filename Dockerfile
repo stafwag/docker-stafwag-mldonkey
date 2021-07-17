@@ -1,4 +1,6 @@
-FROM debian:buster
+ARG BASE_IMAGE=debian:buster
+FROM $BASE_IMAGE
+
 LABEL maintainer "staf wagemakers <staf@wagemakers.be>"
 
 RUN useradd -u 10000 mldonkey -p '*'
